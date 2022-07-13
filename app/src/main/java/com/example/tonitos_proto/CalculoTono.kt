@@ -43,6 +43,27 @@ class CalculoTono : AppCompatActivity() {
         bind.botonOk.setOnClickListener {
             acorde = bind.visor.text.toString()
         }
+        bind.botonre.setOnClickListener {
+
+        }
+        bind.botonmi.setOnClickListener {
+
+        }
+        bind.botonfa.setOnClickListener {
+
+        }
+        bind.botonsol.setOnClickListener {
+
+        }
+        bind.botondo.setOnClickListener {
+
+        }
+        bind.botondo.setOnClickListener {
+
+        }
+        bind.botondo.setOnClickListener {
+
+        }
 
 
     }
