@@ -15,50 +15,58 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="65dp"
         android:background="@drawable/botonredondo"
         android:text="@string/botonsol"
         app:backgroundTint="#1F4E83"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="216dp" />
+        app:layout_constraintBottom_toTopOf="@+id/botonmenor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonfa" />
 
     <Button
         android:id="@+id/botonborrar"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
 
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="#1F4E83"
         android:text="@string/borrar"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toStartOf="@+id/botonvolver"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toEndOf="@+id/botonintroducir"
-        app:layout_constraintTop_toBottomOf="@+id/botonintroducir"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/botonquinta"
         android:layout_width="45dp"
         android:layout_height="wrap_content"
 
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="7dp"
         android:backgroundTint="#1F4E83"
         android:text="@string/boton5"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintEnd_toStartOf="@+id/botonmenor"
+        app:layout_constraintStart_toEndOf="@+id/botonseptima"
+        app:layout_constraintTop_toBottomOf="@+id/botonbemol" />
 
     <Button
         android:id="@+id/botonla"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/botonredondo"
         android:text="@string/botonla"
         app:backgroundTint="#1F4E83"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="155dp" />
+        app:layout_constraintEnd_toStartOf="@+id/editnumeroacordes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonsi" />
 
     <Button
         android:id="@+id/botonsi"
@@ -81,22 +89,30 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="59dp"
         android:background="@drawable/botonredondo"
         android:text="@string/botonfa"
         app:backgroundTint="#1F4E83"
-        tools:layout_editor_absoluteX="282dp"
-        tools:layout_editor_absoluteY="155dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editnumeroacordes"
+        app:layout_constraintTop_toBottomOf="@+id/botonmi" />
 
     <Button
         android:id="@+id/botonbemol"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="17dp"
         android:background="@drawable/botonredondo"
         android:text="b"
         app:backgroundTint="#1F4E83"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="252dp" />
+        app:layout_constraintEnd_toStartOf="@+id/botonsol"
+        app:layout_constraintStart_toEndOf="@+id/sostenido"
+        app:layout_constraintTop_toBottomOf="@+id/editnumeroacordes" />
 
     <Button
         android:id="@+id/botonmi"
@@ -116,7 +132,7 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="117dp"
         android:layout_marginBottom="19dp"
         android:background="@drawable/botonredondo"
@@ -132,7 +148,7 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="122dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/botonredondo"
         android:text="@string/botondo"
@@ -167,11 +183,17 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="65dp"
         android:background="@drawable/botonredondo"
         android:text="#"
         app:backgroundTint="#1F4E83"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="216dp" />
+        app:layout_constraintBottom_toTopOf="@+id/botonmayor"
+        app:layout_constraintEnd_toStartOf="@+id/editnumeroacordes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonla" />
 
     <EditText
         android:id="@+id/editnumeroacordes"
@@ -180,38 +202,50 @@
         android:background="@drawable/stylo"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="140dp" />
+        app:layout_constraintBottom_toTopOf="@+id/botonsol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/botonmayor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="12dp"
         android:backgroundTint="#1F4E83"
         android:text="@string/mayor"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintBottom_toTopOf="@+id/visor"
+        app:layout_constraintEnd_toStartOf="@+id/botonseptima"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/botonmenor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="59dp"
         android:backgroundTint="#1F4E83"
         android:text="@string/menor"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonquinta"
+        app:layout_constraintTop_toBottomOf="@+id/botonsol" />
 
     <Button
         android:id="@+id/botonseptima"
         android:layout_width="45dp"
         android:layout_height="wrap_content"
 
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="12dp"
         android:backgroundTint="#1F4E83"
         android:text="@string/siete"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintEnd_toStartOf="@+id/botonquinta"
+        app:layout_constraintStart_toEndOf="@+id/botonmayor"
+        app:layout_constraintTop_toBottomOf="@+id/botonbemol" />
 
     <TextView
         android:id="@+id/visor"
@@ -219,7 +253,7 @@
         android:layout_height="74dp"
 
         android:layout_marginStart="105dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="98dp"
         android:background="@drawable/stylo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -230,10 +264,10 @@
         android:id="@+id/botonintroducir"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="119dp"
-        android:layout_marginTop="27dp"
 
-        android:layout_marginEnd="5dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="7dp"
         android:backgroundTint="#1F4E83"
         android:text="@string/introducir"
         app:layout_constraintEnd_toStartOf="@+id/botonOk"
@@ -244,10 +278,10 @@
         android:id="@+id/botonOk"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="27dp"
 
-        android:layout_marginEnd="98dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="59dp"
         android:backgroundTint="#1F4E83"
         android:text="@string/OK"
         app:layout_constraintEnd_toEndOf="parent"
@@ -258,30 +292,24 @@
         android:id="@+id/botonCalcular"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
 
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#1F4E83"
         android:text="@string/calcular"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toStartOf="@+id/botonvolver"
-        app:layout_constraintStart_toEndOf="@+id/botonintroducir"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonintroducir" />
 
     <Button
         android:id="@+id/botonvolver"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="130dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
         android:backgroundTint="#1F4E83"
         android:text="@string/volver"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/botonOk"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/botonCalcular"
         app:layout_constraintTop_toBottomOf="@+id/botonOk" />
 
@@ -301,8 +329,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
         android:text="Número de acorde"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="108dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editnumeroacordes"
+        app:layout_constraintEnd_toStartOf="@+id/botonmi"
+        app:layout_constraintStart_toEndOf="@+id/botonsi"
+        app:layout_constraintTop_toBottomOf="@+id/botonre" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

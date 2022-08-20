@@ -23,6 +23,11 @@ class Motor (misacordes:ArrayList<String>) {
     private val labmayor = arrayListOf("lab mayor", "lab mayor7", "lab5","sol# mayor","sol# mayor7","sol#5", "sib menor", "sib menor7", "sib5","la# mayor", "la# mayor7", "la#5", "do menor", "do menor7", "do5","do mayor","do7",
         "reb mayor", "reb mayor7", "reb5","do# mayor", "do# mayor7", "do#5", "mib mayor", "mib7", "mib5","re# mayor", "re# mayor7", "re#5", "fa menor", "fa menor7", "fa5", "sol menor", "sol menor7b5","sol5")
 
+    init {
+        this.misacordes = misacordes
+
+
+    }
     fun Calculando(misacordes: ArrayList<String>): Int {
 
         when {
