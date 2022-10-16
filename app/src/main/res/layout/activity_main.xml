@@ -27,8 +27,12 @@
         android:id="@+id/imageView23"
         android:layout_width="115dp"
         android:layout_height="158dp"
-        app:srcCompat="@drawable/tonin4"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tonin4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

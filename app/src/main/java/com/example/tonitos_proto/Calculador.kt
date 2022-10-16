@@ -38,6 +38,10 @@ class Calculador : AppCompatActivity() {
             val intent= Intent(this,CalculoTono::class.java)
             startActivity(intent)
         }
+        binding.volver.setOnClickListener {
+            val intent= Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
